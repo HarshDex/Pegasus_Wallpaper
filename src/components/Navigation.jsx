@@ -1,7 +1,7 @@
 import React from "react";
 import "../pages/Home.css";
 import { Link } from "react-router-dom";
-
+import "./Navigation.css";
 const Navigation = () => {
   return (
     <>
