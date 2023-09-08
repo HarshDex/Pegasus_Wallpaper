@@ -1,26 +1,33 @@
-/* Media query for screens with a minimum width of 768px (tablets) */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 18px;
-        /* Adjust other styles for tablets */
-    }
-    /* Additional styles for tablets */
+
+/* Media query for screens with a minimum width of 768px and maximum width of 991px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Additional styles for tablets */
+
+  .hero--section {
+    height: 100vh; /* Reduce hero section height for small desktops */
+  }
+
+  .hero--section h1 {
+    font-size: 2em; /* Adjust font size for tablets */
+  }
+
+  .center--container h1 {
+    font-size: 3em; /* Adjust font size for tablets */
+  }
+
+  .search--container {
+    flex-direction: column;
+  }
 }
 
-/* Media query for screens with a minimum width of 992px (small desktops) */
+/* Media query for screens with a minimum width of 992px (small desktops and above) */
 @media screen and (min-width: 992px) {
-    body {
-        font-size: 20px;
-        /* Adjust other styles for small desktops */
-    }
-    /* Additional styles for small desktops */
-}
+  /* Additional styles for small desktops and above */
+  .hero--section {
+    height: 100vh; /* Reduce hero section height for small desktops */
+  }
 
-/* Media query for screens with a minimum width of 1200px (large desktops) */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 22px;
-        /* Adjust other styles for large desktops */
-    }
-    /* Additional styles for large desktops */
+  .center--container h1 {
+    font-size: 4em; /* Adjust font size for small desktops */
+  }
 }
