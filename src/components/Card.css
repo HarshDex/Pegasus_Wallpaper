@@ -1,0 +1,72 @@
+.grid-container {
+  margin-top: 1em;
+  margin: 2em;
+  border: none;
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Adjust the minmax width as needed */
+  gap: 40px; /* Add some gap between grid items */
+  grid-template-rows: repeat(4, 1fr); /* Define 4 rows */
+}
+
+.grid-item {
+  box-shadow: 0px 4px 8px rgba(1, 1, 1, 0.2);
+  position: relative;
+  border-radius: 10px;
+  transition: all ease 1s;
+  border: none;
+  overflow: hidden;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-item img {
+  width: 100%;
+  height: fit-content;
+  object-fit: cover;
+}
+
+.grid-item .container-about {
+  position: absolute;
+  height: 10%;
+  width: 80%;
+  bottom: 0%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.grid-item .author-profile {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.grid-item .author-about {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+.grid-item i {
+  display: none;
+  font-size: 2.4em;
+  background-color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  color: rgb(130, 130, 130);
+  z-index: 99;
+  transition: all 1s ease-out;
+}
+
+.grid-item:hover i {
+  display: inline;
+}

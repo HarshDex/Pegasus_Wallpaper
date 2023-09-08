@@ -1,5 +1,6 @@
 import React from "react";
 import "../pages/Home.css";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   return (
@@ -8,7 +9,9 @@ const Navigation = () => {
         <nav>
           <img src="" alt="" />
           <a href="#">Home</a>
-          <a href="#">About</a>
+          <Link to={"/wallpaper"}>
+            <a href="#">Wallpaper</a>
+          </Link>
         </nav>
       </header>
     </>

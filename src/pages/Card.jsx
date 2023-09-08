@@ -1,32 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./cards.css";
-import axios from "axios";
 
-const url =
-  "https://pegasuswallpaper-c09bf-default-rtdb.firebaseio.com/images.json";
 
 const Card = () => {
-  const [data, setData] = useState([]);
-
-  const fetchData = async (url) => {
-    try {
-      const res = await axios.get(url);
-      console.log(res.data);
-      // Convert the object values into an array
-      const dataArray = Object.values(res.data);
-
-      console.log("DATA ARRAY: ", dataArray);
-
-      setData(dataArray);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-  useEffect(() => {
-    fetchData(url);
-  }, []);
-
   return (
     <>
       <div id="card--container">
