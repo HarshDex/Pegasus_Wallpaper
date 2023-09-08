@@ -4,7 +4,6 @@
   background-image: url("../assets/pexels-bg.jpg");
   background-size: cover;
 }
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -12,12 +11,10 @@ nav {
   font-size: 1.45em;
   padding: 0 2em;
 }
-
 nav a {
   color: white;
   text-decoration: none;
 }
-
 .hero--section h1 {
   margin-bottom: 0.25em;
   color: white;
@@ -73,3 +70,4 @@ nav {
   color: white;
   padding-top: 1em;
 }
+
