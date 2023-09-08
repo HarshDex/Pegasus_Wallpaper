@@ -35,7 +35,7 @@ const Card = () => {
             </div>
           </div>
           <div id="image">
-
+              
           </div>
           <div id="details--Button">
             <i class="ri-information-line"></i>
