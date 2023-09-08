@@ -12,8 +12,17 @@ const Home = () => {
           <a href="#">About</a>
         </nav>
         <div className="center--container">
-          <h1>Pegasus Wallpapers</h1>
-          <input type="text" placeholder="Search for Photos" />
+          <div className="center--wrap">
+            <h1>Pegasus Wallpapers</h1>
+            <div className="search--container">
+              <input
+                className="search--box"
+                type="text"
+                placeholder="Search for Photos"
+              />
+              <button>Search</button>
+            </div>
+          </div>
         </div>
       </header>
     </div>
