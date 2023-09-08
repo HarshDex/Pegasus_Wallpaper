@@ -71,3 +71,22 @@ nav {
   padding-top: 1em;
 }
 
+/* Media query for screens with a minimum width of 768px (tablets) */
+@media screen and (min-width: 768px) {
+    .center--container .center--wrap h1{
+      font-size: 10px;
+    }
+  /* Additional styles for tablets */
+}
+
+/* Media query for screens with a minimum width of 992px (small desktops) */
+@media screen and (min-width: 992px) {
+  
+  /* Additional styles for small desktops */
+}
+
+/* Media query for screens with a minimum width of 1200px (large desktops) */
+@media screen and (min-width: 1200px) {
+  
+  /* Additional styles for large desktops */
+}

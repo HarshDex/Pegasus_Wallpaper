@@ -5,19 +5,14 @@
 
 /* Media query for screens with a minimum width of 768px (tablets) */
 @media screen and (min-width: 768px) {
-    body {
-        font-size: 18px;
-        /* Adjust other styles for tablets */
+    #heading{
+        font-size: 20px;
     }
     /* Additional styles for tablets */
 }
 
 /* Media query for screens with a minimum width of 992px (small desktops) */
 @media screen and (min-width: 992px) {
-    body {
-        font-size: 20px;
-        /* Adjust other styles for small desktops */
-    }
     /* Additional styles for small desktops */
 }
 

@@ -6,7 +6,7 @@ import Navigation from "../components/Navigation";
 const Home = () => {
   return (
     <div className="hero--section">
-      <Navigation />
+      <Navigation/>
       <div className="center--container">
         <div className="center--wrap">
           <h1>Pegasus Wallpapers</h1>
