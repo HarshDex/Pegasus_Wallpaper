@@ -5,3 +5,28 @@ a {
 header {
   padding: 0 2em;
 }
+#menu--icon i{
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  /* Additional styles for mobile */
+  #menu--icon i{
+    display: block;
+  }
+  a{
+    display: none;
+  }
+}
+
+/* Media query for screens with a minimum width of 768px and maximum width of 991px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Additional styles for tablets */
+
+  
+}
+
+/* Media query for screens with a minimum width of 992px (small desktops and above) */
+@media screen and (min-width: 992px) {
+  /* Additional styles for small desktops and above */
+  
+}

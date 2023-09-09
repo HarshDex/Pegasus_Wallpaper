@@ -16,7 +16,12 @@ const Home = () => {
               type="text"
               placeholder="Search for Photos"
             />
-            <button>Search</button>
+            <button>
+              <p>Search</p>
+            </button>
+          </div>
+          <div id="suggestion">
+            
           </div>
         </div>
       </div>

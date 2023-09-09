@@ -8,10 +8,13 @@ const Navigation = () => {
       <header>
         <nav>
           <img src="" alt="" />
-          <a href="#">Home</a>
-          <Link to={"/wallpaper"}>
-            <a href="#">Wallpaper</a>
-          </Link>
+            <a href="#">Home</a>
+            <Link to={"/wallpaper"}>
+              <a href="#">Wallpaper</a>
+            </Link>
+          <div id="menu--icon">
+            <i class="ri-menu-line"></i>
+          </div>
         </nav>
       </header>
     </>
