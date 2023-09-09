@@ -1,32 +1,35 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Card from "../components/Card";
 import "./Wallpaper.css";
 import { Link } from "react-router-dom";
+import GlobalAppContext from "../context/GlobalContext";
 
 const Wallpaper = () => {
+  const apiData = useContext(GlobalAppContext);
+  const [data, setData] = useState([...apiData]);
 
-  
-  const ByDate = () => {
-    const sortedImages = apiData.sort((a, b) => new Date(b.date_uploaded) - new Date(a.date_uploaded));
-    return (
-      <div>
-        <ImageList images={sortedImages} />
-      </div>
+  const byDate = () => {
+    const sortedData = [...data].sort(
+      (a, b) => new Date(b.date_uploaded) - new Date(a.date_uploaded)
     );
-  }
-  const ByLikes = () => {
-    const sortedImages = apiData.sort((a,b) => a.likes-b.likes);
-    return(
-      <div>
-        <ImageList images = {sortedImages}/>
-      </div>
-    )
-  }
+    setData(sortedData);
+  };
+
+  const byLikes = () => {
+    const sortedData = [...data].sort((a, b) => b.likes - a.likes);
+    setData(sortedData);
+  };
+
+  // Use useEffect to update data when apiData changes
+  useEffect(() => {
+    setData([...apiData]);
+  }, [apiData]);
+
   return (
     <>
       <header className="secondary--header">
         <nav>
-          <img src="" alt="" />
+          {/* <img src="" alt="" /> */}
           <Link to={"/"}>
             <a style={{ color: "black" }} href="#">
               Home
@@ -41,13 +44,24 @@ const Wallpaper = () => {
       </header>
       <h1 id="heading">Our Latest Wallpapers</h1>
       <div id="sort">
-        <select name="Sort" id="Sorting--dropdown">
-          <option  value="--">Sort</option>
-          <option onClick="ByDate" value="Bydate">By Date</option>
-          <option onClick="ByLikes" value="Bysize">By Popularity</option>
+        <select
+          name="sort"
+          id="sorting--dropdown"
+          onChange={(e) => {
+            const selectedOption = e.target.value;
+            if (selectedOption === "byDate") {
+              byDate();
+            } else if (selectedOption === "bySize") {
+              byLikes();
+            }
+          }}
+        >
+          <option value="">Sort</option>
+          <option value="byDate">By Date</option>
+          <option value="bySize">By Popularity</option>
         </select>
       </div>
-      <Card />
+      <Card data={data} />
     </>
   );
 };

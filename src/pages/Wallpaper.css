@@ -11,46 +11,24 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid gray;
-
 }
 
 .secondary--header nav {
   display: flex;
   align-items: center;
-
-
-  padding: 0.75em;
+  padding: 0 1 em;
 }
 
+#sort {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
 
-#Sorting--dropdown{
-  position: absolute;
-  width: 8vw;
-  left: 89%;
-  top: 34%;
-  border : none;
+#sorting--dropdown {
+  width: 8em;
+  border: none;
   font-size: 1.3em;
-}
-
-/* Media query for screens with a maximum width of 767px (mobile) */
-@media screen and (max-width: 767px) {
-  /* Additional styles for mobile */
-
-  #heading {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2em;
-  }
-}
-
-/* Media query for screens with a minimum width of 768px and maximum width of 991px (tablets) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Additional styles for tablets */
-}
-
-/* Media query for screens with a minimum width of 992px (small desktops and above) */
-@media screen and (min-width: 992px) {
-  /* Additional styles for small desktops and above */
+  border: 1px solid black;
+  padding: 0 2em;
 }

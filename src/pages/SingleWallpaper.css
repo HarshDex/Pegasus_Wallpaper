@@ -1,5 +1,6 @@
 /* Main container */
 .card--container {
+  height: 100vh;
   background-color: #fffffdc8;
   display: flex;
   justify-content: center;
