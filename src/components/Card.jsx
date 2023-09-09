@@ -1,13 +1,14 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import GlobalContext from "../context/GlobalContext";
 import "./Card.css";
 import { Link } from "react-router-dom";
 
 const Card = (props) => {
+
   return (
     <div className="grid-container">
       {props.data.map((item, index) => (
-        <Link to={`/download/${index}`} key={index}>
+        <Link to={`/download/${item.title}`} key={index}>
           <div className="grid-item" key={index}>
             <img src={item.image_url} alt="" loading="lazy" />
             <div className="container-about">

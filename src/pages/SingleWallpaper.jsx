@@ -7,7 +7,7 @@ import { saveAs } from "file-saver";
 
 const SingleWallpaper = () => {
   const apiData = useContext(GlobalContext);
-  const { index } = useParams();
+  const { title } = useParams();
   const [newData, setNewData] = useState([]);
 
   const [downloaded, setDownloaded] = useState(false);
@@ -28,14 +28,14 @@ const SingleWallpaper = () => {
   };
 
   useEffect(() => {
-    const filteredData = apiData.filter((item, idx) => idx === parseInt(index));
+    const filteredData = apiData.filter((item) => item.title === title);
     console.log("FILTERED DATA", filteredData);
     if (filteredData.length > 0) {
       setNewData(filteredData);
     } else {
       console.log("Not Found");
     }
-  }, [apiData, index]);
+  }, [apiData, title]);
 
   return (
     <>

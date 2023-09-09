@@ -1,5 +1,5 @@
 #heading {
-  margin-top: 2em;
+  margin-top: 1em;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@
 }
 
 #sort {
+
   width: 100%;
   display: flex;
   justify-content: end;
@@ -31,4 +32,5 @@
   font-size: 1.3em;
   border: 1px solid black;
   padding: 0 2em;
+  margin-right: 2em;
 }
