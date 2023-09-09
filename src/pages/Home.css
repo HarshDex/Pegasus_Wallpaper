@@ -111,6 +111,9 @@ nav {
   .search--container {
     flex-direction: column;
   }
+  button{
+    
+  }
 }
 
 /* Media query for screens with a minimum width of 992px (small desktops and above) */
