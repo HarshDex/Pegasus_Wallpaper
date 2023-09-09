@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/card" element={<Card />} />
         <Route path="/wallpaper" element={<Wallpaper />} />
-        <Route path="/download/:name" element={<SingleWallpaper />} />
+        <Route path="/download/:index" element={<SingleWallpaper />} />
       </Routes>
     </>
   );

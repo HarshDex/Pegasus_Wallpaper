@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import GlobalContext from "../context/GlobalContext";
 import "./Card.css";
+import { Link } from "react-router-dom";
+
 
 const Card = () => {
   const apiData = useContext(GlobalContext);
