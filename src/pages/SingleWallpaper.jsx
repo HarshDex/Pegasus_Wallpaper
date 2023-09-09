@@ -1,14 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./SingleWallpaper.css";
-import { useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import GlobalContext from "../context/GlobalContext";
 
 const SingleWallpaper = () => {
+  const apiData = useContext(GlobalContext);
+  const { index } = useParams();
+  const [newData, setNewData] = useState([]);
+
+  useEffect(() => {
+    const filteredData = apiData.filter((item, idx) => idx === parseInt(index));
+    if (filteredData.length > 0) {
+      setNewData(filteredData);
+    } else {
+      console.log("Not Found");
+    }
+  }, [apiData, index]);
+
   return (
     <>
       <div id="card--container">
-        {data &&
-          data.map((item, index) => (
-            <div id="box" key={index}>
+        {newData.length > 0 ? (
+          newData.map((item, idx) => (
+            <div id="box" key={idx}>
               <div id="nav">
                 <div id="about--creator">
                   <div id="creator--image"></div>
@@ -37,7 +51,10 @@ const SingleWallpaper = () => {
                 <i className="ri-information-line"></i>
               </div>
             </div>
-          ))}
+          ))
+        ) : (
+          <p>Not Working</p>
+        )}
       </div>
     </>
   );
