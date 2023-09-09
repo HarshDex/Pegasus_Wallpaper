@@ -1,10 +1,10 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-
 import Wallpaper from "./pages/Wallpaper";
 import Card from "./components/Card";
 import SingleWallpaper from "./pages/SingleWallpaper";
+
 function App() {
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/card" element={<Card />} />
         <Route path="/wallpaper" element={<Wallpaper />} />
-        <Route path="/download/:name" component={<SingleWallpaper />} />
+        <Route path="/download/:name" element={<SingleWallpaper />} />
       </Routes>
     </>
   );
