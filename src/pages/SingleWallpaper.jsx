@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
-import "./cards.css";
+import "./SingleWallpaper.css";
+import { useNavigate } from "react-router-dom";
 
-
-const Card = () => {
+const SingleWallpaper = () => {
   return (
     <>
       <div id="card--container">
@@ -43,4 +43,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default SingleWallpaper;
