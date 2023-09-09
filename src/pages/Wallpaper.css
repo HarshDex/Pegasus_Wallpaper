@@ -1,26 +1,46 @@
-#heading{
-    background-color: rgba(194, 17, 194, 0.228);
+#heading {
+  margin-top: 2em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
 }
 
+.secondary--header {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
 
-/* Media query for screens with a minimum width of 768px (tablets) */
-@media screen and (min-width: 768px) {
-    #heading{
-        font-size: 20px;
-    }
-    /* Additional styles for tablets */
 }
 
-/* Media query for screens with a minimum width of 992px (small desktops) */
+.secondary--header nav {
+  display: flex;
+  align-items: center;
+
+
+  padding: 0.75em;
+}
+
+/* Media query for screens with a maximum width of 767px (mobile) */
+@media screen and (max-width: 767px) {
+  /* Additional styles for mobile */
+
+  #heading {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+  }
+}
+
+/* Media query for screens with a minimum width of 768px and maximum width of 991px (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Additional styles for tablets */
+}
+
+/* Media query for screens with a minimum width of 992px (small desktops and above) */
 @media screen and (min-width: 992px) {
-    /* Additional styles for small desktops */
-}
-
-/* Media query for screens with a minimum width of 1200px (large desktops) */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 22px;
-        /* Adjust other styles for large desktops */
-    }
-    /* Additional styles for large desktops */
+  /* Additional styles for small desktops and above */
 }

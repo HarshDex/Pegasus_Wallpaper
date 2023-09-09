@@ -1,13 +1,12 @@
 import React from "react";
 import Card from "../components/Card";
 import "./Wallpaper.css";
-import Navigation from "../components/Navigation";
 import { Link } from "react-router-dom";
 
 const Wallpaper = () => {
   return (
     <>
-      <header>
+      <header className="secondary--header">
         <nav>
           <img src="" alt="" />
           <Link to={"/"}>

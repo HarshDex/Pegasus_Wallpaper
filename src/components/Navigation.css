@@ -1,3 +1,7 @@
 a {
-    font-size: 0.85em;
+  font-size: 0.85em;
+}
+
+header {
+  padding: 0 2em;
 }

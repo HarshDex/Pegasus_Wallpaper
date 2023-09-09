@@ -11,8 +11,8 @@ nav {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
-  font-size: 1.45em;
-  padding: 0 2em;
+  align-items: center;
+  font-size: 1.5em;
 }
 
 nav a {
@@ -85,10 +85,28 @@ nav {
 
   .center--container h1 {
     font-size: 2.5em; /* Adjust font size for mobile */
+
   }
 
   .search--container {
+    align-items: center;
     flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+  }
+  .search--box{
+    height: 10%;
+    width: 80%;
+    position: relative;
+    top: 10px;
+  }
+  button{
+    position: relative;
+    top: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -110,6 +128,9 @@ nav {
 
   .search--container {
     flex-direction: column;
+  }
+  .search--box{
+    
   }
 }
 
