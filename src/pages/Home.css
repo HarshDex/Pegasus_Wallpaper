@@ -129,13 +129,6 @@ nav {
   .search--container {
     flex-direction: column;
   }
-<<<<<<< HEAD
-  .search--box{
-=======
-  button{
->>>>>>> 65ead5e4e77268e2b52e1ca5e9994210558c561b
-    
-  }
 }
 
 /* Media query for screens with a minimum width of 992px (small desktops and above) */

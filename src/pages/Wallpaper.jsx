@@ -22,6 +22,13 @@ const Wallpaper = () => {
         </nav>
       </header>
       <h1 id="heading">Our Latest Wallpapers</h1>
+      <div id="sort">
+        <select name="Sort" id="Sorting--dropdown">
+          <option value="--">Sort</option>
+          <option value="Bydate">By Date</option>
+          <option value="Bysize">By Size</option>
+        </select>
+      </div>
       <Card />
     </>
   );
