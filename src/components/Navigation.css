@@ -18,7 +18,7 @@ header {
   #menu--icon i {
     display: block;
   }
-  a {
+  #hello{
     display: none;
   }
 
@@ -33,7 +33,5 @@ header {
 
 /* Media query for screens with a minimum width of 992px (small desktops and above) */
 @media screen and (min-width: 992px) {
-  img {
-  }
-  /* Additional styles for small desktops and above */
+    /* Additional styles for small desktops and above */
 }
