@@ -1,34 +1,61 @@
-a {
+/* Navigation Styles */
+
+.main-header {
+  padding: 0 2em;
   font-size: 0.85em;
 }
 
-#hello{
+.nav-link {
+  text-decoration: none;
+  color: white; /* Set your desired link color */
+  margin-right: 20px;
+}
+
+.header-content {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
+  align-items: center;
 }
-header {
-  padding: 0 2em;
+
+a{
+  font-size: 1.35rem;
 }
-#menu--icon i {
+
+.auth-button {
+  background-color: white; /* Set your desired button color */
+  color: black; /* Set your desired text color */
+  border: none;
+  padding: 10px 50px;
+  cursor: pointer;
+  border: 0;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 5px;
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide any overflowing text */
+  text-overflow: ellipsis; /* Display ellipsis (...) for long text */
+}
+
+.menu-icon i {
   display: none;
 }
+
+/* Media query for screens with a maximum width of 767px (mobile) */
 @media screen and (max-width: 767px) {
   /* Additional styles for mobile */
-  #menu--icon i {
+  .menu-icon i {
     display: block;
   }
-  #hello{
+
+  .nav-link {
     display: none;
   }
-
-  
 }
 
 /* Media query for screens with a minimum width of 768px and maximum width of 991px (tablets) */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   /* Additional styles for tablets */
-
 }
 
 /* Media query for screens with a minimum width of 992px (small desktops and above) */
